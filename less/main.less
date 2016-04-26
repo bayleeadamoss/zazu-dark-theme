@@ -1,4 +1,42 @@
-body {
-  background-color: #563D7C;
-  background-image: data-uri('../images/smile.png');
+@main: #F7F7F7;
+
+html, body {
+  background-color: @main;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+section {
+  background-color: darken(@main, 5%);
+  background-image: data-uri('../images/feather.png');
+  background-position: 530px 5px;
+  background-repeat: no-repeat;
+  background-size: 60px;
+
+  input {
+    outline: none;
+    font-size: 40px;
+    width: 500px;
+    padding: 10px;
+    border: 0;
+    background-color: transparent;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid darken(@main, 10%);
+
+    li {
+      display: block;
+      height: 45px;
+      line-height: 45px;
+      border-bottom: 1px solid darken(@main, 10%);
+
+      &.active {
+        background-color: darken(@main, 10%);
+      }
+    }
+  }
 }
