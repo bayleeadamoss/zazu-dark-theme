@@ -13,6 +13,8 @@ section {
   background-position: 530px 5px;
   background-repeat: no-repeat;
   background-size: 60px;
+  -webkit-app-region: drag;
+  cursor: move;
 
   input {
     outline: none;
@@ -21,6 +23,8 @@ section {
     padding: 10px;
     border: 0;
     background-color: transparent;
+    -webkit-app-region: no-drag;
+    cursor: auto;
   }
 
   ul {
@@ -33,6 +37,8 @@ section {
       height: 45px;
       line-height: 45px;
       border-bottom: 1px solid darken(@main, 10%);
+      -webkit-app-region: no-drag;
+      cursor: pointer;
 
       &.active {
         background-color: darken(@main, 10%);
