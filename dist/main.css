@@ -37,6 +37,12 @@ section ul li {
   -webkit-app-region: no-drag;
   cursor: pointer;
 }
+section ul li img {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  float: left;
+}
 section ul li h2 {
   margin: 0;
   font-size: 20px;
