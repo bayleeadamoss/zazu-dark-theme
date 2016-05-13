@@ -1,14 +1,16 @@
-@main: #F7F7F7;
+@primary: #232323;
+@secondary: #C85590;
+@textColor: rgba(255, 255, 255, 0.7);
 
 html, body {
-  background-color: @main;
+  background-color: @primary;
   margin: 0;
   padding: 0;
   font-size: 20px;
 }
 
 section {
-  background-color: darken(@main, 5%);
+  background-color: darken(@primary, 5%);
   background-image: data-uri('../images/feather.png');
   background-position: 530px 5px;
   background-repeat: no-repeat;
@@ -25,12 +27,13 @@ section {
     background-color: transparent;
     -webkit-app-region: no-drag;
     cursor: auto;
+    color: @textColor;
   }
 
   ul {
     padding: 0;
     margin: 0;
-    border-top: 1px solid darken(@main, 10%);
+    border-top: 1px solid darken(@primary, 10%);
     max-height: 333px;
     overflow: scroll;
 
@@ -38,7 +41,7 @@ section {
       display: block;
       height: 45px;
       line-height: 45px;
-      border-bottom: 1px solid darken(@main, 10%);
+      border-bottom: 1px solid darken(@primary, 10%);
       -webkit-app-region: no-drag;
       cursor: pointer;
 
@@ -47,22 +50,30 @@ section {
         width: 30px;
         margin: 5px;
         float: left;
+        opacity: 0.75;
+      }
+
+      h2, h3 {
+        margin: 0;
+        padding-left: 10px;
+        color: @textColor;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       h2 {
-        margin: 0;
         font-size: 20px;
         line-height: 25px;
       }
 
       h3 {
-        margin: 0;
         font-size: 15px;
         line-height: 15px;
       }
 
       &.active {
-        background-color: darken(@main, 10%);
+        background-color: lighten(@primary, 8%);
       }
     }
   }
