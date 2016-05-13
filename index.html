@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Zazu</title>
+      <link href="dist/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <section id="zazu">
+      <div>
+        <input className="mousetrap" type="text" placeholder="Search.." />
+        <ul>
+          <li>
+            <img src="http://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Calculator-icon.png" />
+            <h2>6</h2>
+            <h3>Select item to copy the value to the clipboard.</h3>
+          </li>
+          <li class="active">
+            <img src="http://www.hmlglaw.com/uploads/images/amazon-icon.png" />
+            <h2>Search Amazon for 'batteries'</h2>
+          </li>
+          <li>
+            <img src="https://blog.agilebits.com/wp-content/uploads/2014/04/1Pi-icon-1024.png" />
+            <h2>Chase</h2>
+            <h3>Login to http://chase.com/login</h3>
+          </li>
+          <li>
+            <img src="http://orig10.deviantart.net/bfa2/f/2014/166/9/1/adobe_photoshop_icon_v2_by_dudekpro-d7mg13s.png" />
+            <h2>Adobe Photoshop CC 2015</h2>
+            <h3>/Applications/Adobe CC 2015/Adobe Photoshop CC 2015.app</h3>
+          </li>
+          <li>
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/chrome-512.png">
+            <h2>Emoji</h2>
+            <h3>http://www.emoji-cheat-sheet.com/</h3>
+          </li>
+          <li>
+            <img src="http://cdn.shopify.com/s/files/1/0185/5092/products/objects-0177.png?v=1369543387">
+            <h2>Beer</h2>
+            <h3>Select to copy emoji to clipboard!</h3>
+          </li>
+          <li>
+            <img src="http://image005.flaticon.com/25/png/512/25/25231.png">
+            <h2>Gist: Create from clipboard</h2>
+            <h3>Optionally specify options</h3>
+          </li>
+          <li>
+            <img src="http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Pandora-icon.png">
+            <h2>Next</h2>
+            <h3>Next song in Pandora</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <style>
+      section {
+        width: 600px;
+        height: 400px;
+        margin: 40px auto 0;
+        box-shadow: 0px 0px 37px 5px rgba(0,0,0,0.75);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-2.2.3.min.js"
+      integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+      crossorigin="anonymous"></script>
+    <script>
+      jQuery('#zazu li').on('mouseenter', function() {
+        jQuery('#zazu li.active').removeClass('active');
+        jQuery(this).addClass('active');
+      });
+    </script>
+  </body>
+</html>
