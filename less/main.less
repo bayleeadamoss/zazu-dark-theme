@@ -41,56 +41,75 @@ section#zazu {
     color: @textColor;
   }
 
-  ul {
-    padding: 0;
-    margin: 0;
-    border-top: 1px solid darken(@primary, 10%);
-    max-height: 333px;
-    overflow: scroll;
+  iframe#preview {
+    border: 0;
+  }
 
-    li {
-      display: block;
-      height: 45px;
-      line-height: 45px;
-      border-bottom: 1px solid darken(@primary, 10%);
-      -webkit-app-region: no-drag;
-      cursor: pointer;
+  div.results {
+    display: flex;
+    flex-direction: row;
 
-      img {
-        height: 30px;
-        width: 30px;
-        margin: 7.5px;
-        float: left;
-        opacity: 0.75;
+    ul {
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid darken(@primary, 10%);
+      max-height: 333px;
+      overflow: hidden;
+      width: 50%;
+
+      &:last-child {
+        width: 100%;
       }
 
-      h2, h3 {
-        margin: 0;
-        padding-left: 10px;
-        color: @textColor;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-family: "Sans Unicode", "Lucida Grande", sans-serif;
-        font-weight: 400;
+      + div {
+        width: 50%;
       }
 
-      h2 {
-        font-size: 20px;
-        line-height: 25px;
-        &:last-child {
-          font-size: 20px;
-          line-height: 45px;
+      li {
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        border-bottom: 1px solid darken(@primary, 10%);
+        -webkit-app-region: no-drag;
+        cursor: pointer;
+        width: 100%;
+
+        img {
+          height: 30px;
+          width: 30px;
+          margin: 7.5px;
+          float: left;
+          opacity: 0.75;
         }
-      }
 
-      h3 {
-        font-size: 15px;
-        line-height: 15px;
-      }
+        h2, h3 {
+          margin: 0;
+          padding-left: 10px;
+          color: @textColor;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-family: "Sans Unicode", "Lucida Grande", sans-serif;
+          font-weight: 400;
+        }
 
-      &.active {
-        background-color: lighten(@primary, 8%);
+        h2 {
+          font-size: 20px;
+          line-height: 25px;
+          &:last-child {
+            font-size: 20px;
+            line-height: 45px;
+          }
+        }
+
+        h3 {
+          font-size: 15px;
+          line-height: 15px;
+        }
+
+        &.active {
+          background-color: lighten(@primary, 8%);
+        }
       }
     }
   }

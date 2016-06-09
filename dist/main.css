@@ -32,30 +32,45 @@ section#zazu input {
   cursor: auto;
   color: rgba(255, 255, 255, 0.7);
 }
-section#zazu ul {
+section#zazu iframe#preview {
+  border: 0;
+}
+section#zazu div.results {
+  display: flex;
+  flex-direction: row;
+}
+section#zazu div.results ul {
   padding: 0;
   margin: 0;
   border-top: 1px solid #0a0a0a;
   max-height: 333px;
-  overflow: scroll;
+  overflow: hidden;
+  width: 50%;
 }
-section#zazu ul li {
+section#zazu div.results ul:last-child {
+  width: 100%;
+}
+section#zazu div.results ul + div {
+  width: 50%;
+}
+section#zazu div.results ul li {
   display: block;
   height: 45px;
   line-height: 45px;
   border-bottom: 1px solid #0a0a0a;
   -webkit-app-region: no-drag;
   cursor: pointer;
+  width: 100%;
 }
-section#zazu ul li img {
+section#zazu div.results ul li img {
   height: 30px;
   width: 30px;
   margin: 7.5px;
   float: left;
   opacity: 0.75;
 }
-section#zazu ul li h2,
-section#zazu ul li h3 {
+section#zazu div.results ul li h2,
+section#zazu div.results ul li h3 {
   margin: 0;
   padding-left: 10px;
   color: rgba(255, 255, 255, 0.7);
@@ -65,18 +80,18 @@ section#zazu ul li h3 {
   font-family: "Sans Unicode", "Lucida Grande", sans-serif;
   font-weight: 400;
 }
-section#zazu ul li h2 {
+section#zazu div.results ul li h2 {
   font-size: 20px;
   line-height: 25px;
 }
-section#zazu ul li h2:last-child {
+section#zazu div.results ul li h2:last-child {
   font-size: 20px;
   line-height: 45px;
 }
-section#zazu ul li h3 {
+section#zazu div.results ul li h3 {
   font-size: 15px;
   line-height: 15px;
 }
-section#zazu ul li.active {
+section#zazu div.results ul li.active {
   background-color: #373737;
 }
