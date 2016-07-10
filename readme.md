@@ -2,18 +2,18 @@
 
 A dark theme example written in LESS with node/gulp.
 
-[View a demo](http://tinytacoteam.github.io/theme-playbook/#tinytacoteam/dark-theme)
+[View a demo](https://tinytacoteam.github.io/zazu-theme-playbook/#tinytacoteam/zazu-dark-theme)
 
 ![Screenshot](./images/screenshot.png)
 
 ## Installing
 
-Mark `tinytacoteam/dark-theme` inside of your `~/.zazurc.js` file.
+Mark `tinytacoteam/zazu-dark-theme` inside of your `~/.zazurc.js` file.
 
 ~~~ javascript
 module.exports = {
   // ...
-  'theme': 'tinytacoteam/dark-theme',
+  'theme': 'tinytacoteam/zazu-dark-theme',
   // ...
 }
 ~~~
