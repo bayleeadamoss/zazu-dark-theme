@@ -62,7 +62,10 @@ section#zazu div.results ul li {
   cursor: pointer;
   width: 100%;
 }
-section#zazu div.results ul li img {
+section#zazu div.results ul li .icon {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  line-height: 30px;
   height: 30px;
   width: 30px;
   margin: 7.5px;

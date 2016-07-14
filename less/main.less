@@ -1,5 +1,4 @@
 @primary: #232323;
-@secondary: #C85590;
 @textColor: rgba(255, 255, 255, 0.7);
 
 html, body {
@@ -15,7 +14,7 @@ body.playbook {
   }
 
   .github-corner > svg {
-    fill: rgba(255, 255, 255, 0.7);
+    fill: @textColor;
     color: darken(@primary, 5%);
   }
 }
@@ -74,7 +73,10 @@ section#zazu {
         cursor: pointer;
         width: 100%;
 
-        img {
+        .icon {
+          color: @textColor;
+          text-align: center;
+          line-height: 30px;
           height: 30px;
           width: 30px;
           margin: 7.5px;
