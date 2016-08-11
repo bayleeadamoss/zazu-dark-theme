@@ -1,14 +1,16 @@
 @primary: #232323;
 @textColor: rgba(255, 255, 255, 0.7);
+@transparency: 90%;
 
 html, body {
-  background-color: @primary;
   margin: 0;
   padding: 0;
   font-size: 20px;
 }
 
 body.playbook {
+  background-color: @primary;
+
   #install {
     color: @textColor;
   }
@@ -20,7 +22,7 @@ body.playbook {
 }
 
 section#zazu {
-  background-color: darken(@primary, 5%);
+  background-color: fade(darken(@primary, 5%), @transparency);
   background-image: data-uri('../images/feather.png');
   background-position: 530px 5px;
   background-repeat: no-repeat;
@@ -51,7 +53,7 @@ section#zazu {
     ul {
       padding: 0;
       margin: 0;
-      border-top: 1px solid darken(@primary, 10%);
+      border-top: 1px solid fade(darken(@primary, 10%), @transparency);
       max-height: 333px;
       overflow: hidden;
       width: 50%;
@@ -68,7 +70,7 @@ section#zazu {
         display: block;
         height: 45px;
         line-height: 45px;
-        border-bottom: 1px solid darken(@primary, 10%);
+        border-bottom: 1px solid fade(darken(@primary, 10%), @transparency);
         -webkit-app-region: no-drag;
         cursor: pointer;
         width: 100%;
@@ -110,7 +112,7 @@ section#zazu {
         }
 
         &.active {
-          background-color: lighten(@primary, 8%);
+          background-color: fade(lighten(@primary, 8%), @transparency);
         }
       }
     }
