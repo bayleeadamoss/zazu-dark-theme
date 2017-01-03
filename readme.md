@@ -12,9 +12,7 @@ Mark `tinytacoteam/zazu-dark-theme` inside of your `~/.zazurc.json` file.
 
 ~~~ json
 {
-  // ...
-  'theme': 'tinytacoteam/zazu-dark-theme',
-  // ...
+  "theme": "tinytacoteam/zazu-dark-theme"
 }
 ~~~
 
