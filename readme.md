@@ -8,10 +8,10 @@ A dark theme example written in LESS with node/gulp.
 
 ## Installing
 
-Mark `tinytacoteam/zazu-dark-theme` inside of your `~/.zazurc.js` file.
+Mark `tinytacoteam/zazu-dark-theme` inside of your `~/.zazurc.json` file.
 
-~~~ javascript
-module.exports = {
+~~~ json
+{
   // ...
   'theme': 'tinytacoteam/zazu-dark-theme',
   // ...
